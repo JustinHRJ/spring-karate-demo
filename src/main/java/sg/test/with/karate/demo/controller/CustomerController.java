@@ -31,7 +31,7 @@ public class CustomerController {
         CustomerDto dto = new CustomerDto();
         dto.setId(customer.getId());
         dto.setName(customer.getName());
-        return ResponseEntity.status(HttpStatus.CREATED).body(dto);
+        return ResponseEntity.status(HttpStatus.OK).body(dto);
     }
 
     // READ: GET /api/customers/{id}
