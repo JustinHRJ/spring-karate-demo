@@ -31,6 +31,7 @@ public class CustomerController {
         CustomerDto dto = new CustomerDto();
         dto.setId(customer.getId());
         dto.setName(customer.getName());
+        System.out.println("Created customer with ID: " + customer.getId());
         return ResponseEntity.status(HttpStatus.CREATED).body(dto);
     }
 
