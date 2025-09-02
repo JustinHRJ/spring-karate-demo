@@ -13,3 +13,7 @@ spring:
   h2:
     console:
       enabled: false
+
+bank:
+  service:
+    url: "${BANK_SERVICE_URL:http://localhost:9999}"
